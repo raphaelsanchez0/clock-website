@@ -23,11 +23,16 @@ header{
 }
 
 #clock-window{
-    display: block;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background:#f4f4f4;
     margin-top: 25vh;
     height: 25vh;
     width: 25vw;
     border-radius: 0.5em;
+}
+#text{
+    width: 50%;
+    text-align: center;
 }
