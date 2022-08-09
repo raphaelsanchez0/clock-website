@@ -1,7 +1,8 @@
-let timeText = document.querySelector('#time-text')
-let dateText = document.querySelector('#date-text')
+const timeText = document.querySelector('#time-text');
+const dateText = document.querySelector('#date-text');
 
-let months = [ "January", "February", "March", "April", "May", "June", 
+
+const months = [ "January", "February", "March", "April", "May", "June", 
 "July", "August", "September", "October", "November", "December" ];
 
 function currentTime(){
@@ -10,7 +11,7 @@ function currentTime(){
     let MM = date.getMinutes();
     let SS = date.getSeconds();
     let session = 'AM'
-
+    
     let month = months[date.getMonth()-1];
     let day = date.getDate();
     let year = date.getFullYear();
@@ -34,7 +35,7 @@ function currentTime(){
 
     timeText.innerHTML = parsedTime;
     dateText.innerHTML = parsedDate;
-    setTimeout(function(){currentTime()},1000)
+    setTimeout(function(){currentTime()},1000);
 }
 
 currentTime()
